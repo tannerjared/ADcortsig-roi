@@ -45,7 +45,7 @@ source $FREESURFER_HOME/SetUpFreeSurfer.sh
 cp -r $FREESURFER_HOME/subjects/fsaverage $SUBJECTS_DIR
 ```
 
-5. Copy the cortical siganture FreeSurfer label files under the 'cortical_signature_roi' directory to $SUBJECTS_DIR/fsaverage/label.
+5. Copy the cortical signature FreeSurfer label files under the 'cortical_signature_roi' directory to $SUBJECTS_DIR/fsaverage/label.
 
 ```
 cp /path/to/cortical_signature_ROIs/* $SUBJECTS_DIR/fsaverage/label/
@@ -53,7 +53,7 @@ cp /path/to/cortical_signature_ROIs/* $SUBJECTS_DIR/fsaverage/label/
 
 6. Update the targeted FreeSurfer session list in the freesurfer_list.csv file, with each row being a FreeSurfer session.
 
-Note: FreeSurfers listed in freesurfer_list.csv should be in your SUBJECT_DIR path.
+Note: FreeSurfer subjects listed in freesurfer_list.csv should be in your SUBJECT_DIR path.
 
 7. Run the cs_main.py script.
 ```
